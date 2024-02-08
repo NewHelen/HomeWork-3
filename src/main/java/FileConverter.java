@@ -22,11 +22,8 @@ public class FileConverter {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
 
-            // Читаємо заголовок
             String headerLine = reader.readLine();
             String [] headers = headerLine.split(" ");
-
-            // Читаємо решту рядків та створюємо об'єкти User
             String line;
 
             while ((line = reader.readLine()) != null) {
