@@ -8,8 +8,8 @@ public class WordsCounter {
     public static void main(String[] args) {
 
         String fileName = "files/words.txt";
-        Map<String, Integer> unsortedList = countWords(fileName);
-        List<Map.Entry<String, Integer>> sortedEntries = entriesSortedByValues(unsortedList);
+        Map<String, Integer> unsortedEntries = countWords(fileName);
+        List<Map.Entry<String, Integer>> sortedEntries = entriesSortedByValues(unsortedEntries);
         displayWords(sortedEntries);
 
     }
